@@ -76,8 +76,10 @@ npm run dev
 - 실데이터 연동 및 배포
 
 ## 데모 링크
-- **Live Demo**: http://localhost:3000 (로컬 개발)
+- **Live Demo**: https://gen-project-02-c4dhxt3uw-dongyeol-jungs-projects.vercel.app 🚀
+- **Local Dev**: http://localhost:3000
 - **GitHub**: https://github.com/mxten777/gen_project_02
+- **Vercel Dashboard**: https://vercel.com/dongyeol-jungs-projects/gen-project-02/4Ghpz17G2Qdw89ywTEEvAVutccWJ
 
 ---
 문의: vibe@company.com
