@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+# Vibe Finance Hub
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+"데이터로 회계를 단순하게, 재무를 자동으로."
+
+---
+
+## 프로젝트 개요
+Vibe Finance Hub는 매출, 비용, 영수증, 세금계산서, 정산 내역을 한 곳에서 관리할 수 있는 회계·재무 자동화 웹앱입니다.
+
+## 프리미엄 UI/UX 리뉴얼 (완성 ✅)
+
+### 디자인 시스템
+- 프리미엄 컴러 팔레트 (그라디언트, 상태별 색상)
+- Inter/Poppins 프리미엄 폰트 적용
+- 다크모드/라이트모드 완벽 지원
+
+### 고급 애니메이션
+- 마이크로 인터랙션 (hover, focus, active)
+- 페이지 진입 애니리이션 (fade-in, slide-up)
+- 부드러운 트랜지션 효과
+
+### 인터랙티브 컴포넌트
+- Heroicons/Lucide 아이콘 시스템
+- 프리미엄 Toast 알림
+- 테마 토글 (라이트/다크/시스템)
+- 커스텀 차트 툴팁
+
+### 완벽한 반응형
+- 모바일/태블릿/데스크탑 최적화
+- 터치 친화적 인터페이스 (44px 최소 터치 영역)
+- 모바일 햄버거 네비게이션
+- 적응형 그리드 레이아웃
+
+### 접근성 준수
+- ARIA 속성 완벽 적용
+- 키보드 네비게이션 지원
+- 스크린 리더 지원
+- 색상 대비 최적화
+
+## 주요 기능
+- 대시보드: 월별/분기별 매출·비용·순이익 시각화
+- 거래 등록/관리: 매출/비용 폼, 거래내역 테이블, 검색/필터
+- 보고서: 월간 재무요약 PDF 생성
+- 반응형 UI: 프리미엄 스타일, TailwindCSS 기반 기업형 레이아웃
+- 차트: Recharts 기반 매출/비용/순이익 그래프
+- 권한/인증: 관리자/사용자 권한 분리(추후)
+- OCR/문서처리: 영수증 이미지 OCR, 세금계산서 PDF 업로드
+- 알림/리마인더: 마감 일정 등록/관리 및 알림 내역 표시
+
+## 폴더 구조
+```
+/src/components   # 주요 UI 컴포넌트
+/src/app          # 페이지 라우팅
+/public           # 정적 파일 및 이미지
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 개발/실행 방법
+```
+npm install
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 기술 스택
+- **Frontend**: Next.js 16.x (TypeScript)
+- **Styling**: TailwindCSS 3.x (프리미엄 스타일 가이드)
+- **Icons**: Heroicons, Lucide React
+- **Charts**: Recharts (커스텀 애니메이션)
+- **PDF**: jsPDF (보고서 생성)
+- **State**: React Context API (테마 관리)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 향후 추가 예정
+- Firebase 연동 (Auth, Firestore, Storage, Functions)
+- 관리자 승인/알림 기능
+- 실데이터 연동 및 배포
 
-## Learn More
+## 데모 링크
+- **Live Demo**: http://localhost:3000 (로컬 개발)
+- **GitHub**: https://github.com/mxten777/gen_project_02
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+문의: vibe@company.com
