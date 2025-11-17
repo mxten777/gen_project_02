@@ -33,7 +33,7 @@ export default function RootLayout({
       >
         <ThemeProvider>
           <Navigation />
-          <main className="md:ml-64 min-h-screen w-full">{children}</main>
+          <main className="min-h-screen w-full">{children}</main>
         </ThemeProvider>
       </body>
     </html>

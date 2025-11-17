@@ -27,7 +27,8 @@ const ReminderForm: React.FC = () => {
   };
 
   return (
-    <div className="bg-premium-card shadow-premium rounded-card p-8 max-w-md mx-auto mt-10">
+    <div className="min-h-screen bg-premium-bg pt-20 md:pt-6 md:pl-64 px-4">
+      <div className="bg-premium-card shadow-premium rounded-card p-8 max-w-md mx-auto mt-10">
       <h2 className="text-2xl font-display font-bold mb-6 text-premium-primary">마감 일정 등록/관리</h2>
       <form className="mb-6 flex gap-3" onSubmit={handleAdd}>
         <input
@@ -55,6 +56,7 @@ const ReminderForm: React.FC = () => {
           </li>
         ))}
       </ul>
+      </div>
     </div>
   );
 };

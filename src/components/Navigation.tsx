@@ -39,7 +39,7 @@ const Navigation: React.FC = () => {
       </button>
       <nav
         className={`h-screen w-72 sm:w-64 bg-premium-card border-r border-premium-border shadow-premium fixed top-0 left-0 flex flex-col z-50 transition-all duration-500 ease-in-out
-          ${open ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'} md:translate-x-0 md:opacity-100 md:static md:flex md:w-64`}
+          ${open ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'} md:translate-x-0 md:opacity-100`}
         role="navigation"
         aria-label="주 내비게이션"
       >

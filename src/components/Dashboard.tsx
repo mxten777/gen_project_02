@@ -11,7 +11,7 @@ import Toast from './Toast';
 const Dashboard: React.FC = () => {
   const [showToast, setShowToast] = useState(false);
   return (
-    <div className="min-h-screen bg-premium-bg text-premium-text">
+    <div className="min-h-screen bg-premium-bg text-premium-text md:pl-64">
       {/* Header */}
       <header className="bg-premium-card shadow-premium border-b border-premium-border animate-fade-in sticky top-0 z-30 backdrop-blur-lg bg-premium-card/90">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-0 pl-20 md:pl-6">

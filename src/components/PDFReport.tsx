@@ -9,7 +9,8 @@ const PDFReport: React.FC = () => {
   };
 
   return (
-    <div className="bg-premium-card shadow-premium rounded-card p-8 max-w-md mx-auto mt-10 animate-fade-in">
+    <div className="min-h-screen bg-premium-bg pt-20 md:pt-6 md:pl-64 px-4">
+      <div className="bg-premium-card shadow-premium rounded-card p-8 max-w-md mx-auto mt-10 animate-fade-in">
       <h2 className="text-2xl font-display font-bold mb-6 text-premium-primary animate-slide-up">월간 재무요약 보고서</h2>
       <div className="mb-6 space-y-3 animate-slide-up" style={{animationDelay: '0.1s'}}>
         <p className="transition-all duration-300 hover:scale-105">매출: <span className="font-bold text-green-600">₩12,450,000</span></p>
@@ -23,6 +24,7 @@ const PDFReport: React.FC = () => {
       >
         PDF 다운로드
       </button>
+      </div>
     </div>
   );
 };

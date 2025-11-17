@@ -29,17 +29,19 @@ const TransactionTable: React.FC = () => {
   );
 
   return (
-    <div className="bg-white shadow rounded p-6 max-w-2xl mx-auto mt-8">
-      <div className="flex gap-2 mb-4">
+    <div className="min-h-screen bg-premium-bg pt-20 md:pt-6 md:pl-64 px-4">
+      <div className="bg-premium-card shadow-premium rounded-card p-6 max-w-4xl mx-auto mt-8">
+      <h2 className="text-xl font-display font-bold mb-6 text-premium-primary">거래 내역</h2>
+      <div className="flex flex-col sm:flex-row gap-3 mb-6">
         <input
           type="text"
-          className="border rounded px-3 py-2 w-1/2"
+          className="border border-premium-border rounded-premium px-4 py-3 flex-1 bg-premium-bg text-premium-text focus:outline-none focus:ring-2 focus:ring-premium-primary"
           placeholder="카테고리 또는 날짜 검색"
           value={search}
           onChange={e => setSearch(e.target.value)}
         />
         <select
-          className="border rounded px-3 py-2"
+          className="border border-premium-border rounded-premium px-4 py-3 bg-premium-bg text-premium-text focus:outline-none focus:ring-2 focus:ring-premium-primary"
           value={filter}
           onChange={e => setFilter(e.target.value as '전체' | '매출' | '비용')}
         >
@@ -50,7 +52,7 @@ const TransactionTable: React.FC = () => {
       </div>
         <table className="w-full text-left border border-premium-border rounded-premium overflow-hidden">
         <thead>
-          <tr className="bg-gray-100">
+          <tr className="bg-premium-bg">
             <th className="p-2 flex items-center gap-1"><CalendarIcon className="w-4 h-4 text-premium-muted" /> 날짜</th>
             <th className="p-2 flex items-center gap-1"><TagIcon className="w-4 h-4 text-premium-muted" /> 카테고리</th>
             <th className="p-2 flex items-center gap-1"><CurrencyDollarIcon className="w-4 h-4 text-premium-muted" /> 구분</th>
@@ -60,7 +62,7 @@ const TransactionTable: React.FC = () => {
         <tbody>
           {filtered.length === 0 ? (
             <tr>
-              <td colSpan={4} className="text-center py-4 text-gray-400">검색 결과가 없습니다.</td>
+              <td colSpan={4} className="text-center py-4 text-premium-muted">검색 결과가 없습니다.</td>
             </tr>
           ) : (
             filtered.map(t => (
@@ -77,6 +79,7 @@ const TransactionTable: React.FC = () => {
           )}
         </tbody>
       </table>
+      </div>
     </div>
   );
 };

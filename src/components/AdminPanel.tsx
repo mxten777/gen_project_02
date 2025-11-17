@@ -4,7 +4,8 @@ import React from 'react';
 
 const AdminPanel: React.FC = () => {
   return (
-    <div className="bg-premium-card shadow-premium rounded-card p-8 max-w-2xl mx-auto mt-10">
+    <div className="min-h-screen bg-premium-bg pt-20 md:pt-6 md:pl-64 px-4">
+      <div className="bg-premium-card shadow-premium rounded-card p-8 max-w-2xl mx-auto mt-10">
       <h2 className="text-2xl font-display font-bold mb-6 text-premium-primary">관리자 패널</h2>
       <div className="space-y-6">
         <div className="border-b border-premium-border pb-6">
@@ -47,6 +48,7 @@ const AdminPanel: React.FC = () => {
             <button className="bg-premium-muted text-white px-6 py-3 rounded-premium font-semibold shadow-card transition hover:bg-premium-card w-full">시스템 로그 확인</button>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

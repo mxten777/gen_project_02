@@ -21,7 +21,8 @@ const TransactionForm: React.FC<TransactionFormProps> = ({ type }) => {
   };
 
   return (
-    <form className="bg-premium-card shadow-premium rounded-card p-4 sm:p-6 lg:p-8 max-w-md mx-auto mt-6 sm:mt-8 lg:mt-10 animate-fade-in" onSubmit={handleSubmit}>
+    <div className="min-h-screen bg-premium-bg pt-20 md:pt-6 md:pl-64 px-4">
+      <form className="bg-premium-card shadow-premium rounded-card p-4 sm:p-6 lg:p-8 max-w-md mx-auto mt-6 sm:mt-8 lg:mt-10 animate-fade-in" onSubmit={handleSubmit}>
       <h2 className="text-2xl font-display font-bold mb-6 text-premium-primary animate-slide-up">{type === 'sales' ? '매출 등록' : '비용 등록'}</h2>
       <div className="space-y-5 animate-slide-up" style={{animationDelay: '0.1s'}}>
         <div className="relative">
@@ -49,7 +50,8 @@ const TransactionForm: React.FC<TransactionFormProps> = ({ type }) => {
             <RotateCcw className="w-5 h-5" /> 초기화
           </button>
         </div>
-    </form>
+      </form>
+    </div>
   );
 };
 

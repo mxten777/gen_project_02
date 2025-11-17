@@ -23,7 +23,8 @@ const ReceiptOCR: React.FC = () => {
   };
 
   return (
-    <div className="bg-premium-card shadow-premium rounded-card p-8 max-w-md mx-auto mt-10">
+    <div className="min-h-screen bg-premium-bg pt-20 md:pt-6 md:pl-64 px-4">
+      <div className="bg-premium-card shadow-premium rounded-card p-8 max-w-md mx-auto mt-10">
       <h2 className="text-2xl font-display font-bold mb-6 text-premium-primary">영수증 OCR 처리</h2>
       <input type="file" accept="image/*" className="mb-6 px-4 py-3 border border-premium-border rounded-premium w-full bg-premium-bg focus:outline-none focus:ring-2 focus:ring-premium-primary" onChange={handleFileChange} />
       <button
@@ -40,6 +41,7 @@ const ReceiptOCR: React.FC = () => {
           <p>가맹점: <span className="font-bold">{result.store}</span></p>
         </div>
       )}
+      </div>
     </div>
   );
 };
